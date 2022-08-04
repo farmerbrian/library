@@ -9,7 +9,8 @@
   <script src="script.js" defer></script>
 </head>
 <body>
-  <input id="newbtn" type="button" value="New Book" onclick="showForm();"> 
+  <h1>Your Library</h1>
+  <input class="button" id="newbtn" type="button" value="New Book" onclick="showForm();"> 
   <section id="form">
     <form>
       <p>
@@ -29,9 +30,12 @@
         <input type="checkbox" id="read" name="read" > 
       </p>
       <p>
-        <input id="btn" type="button" value="Add Book" onclick="addBookToLibrary();"></input>
+        <input class="button" id="btn" type="button" value="Add Book" onclick="clearShelf(); addBookToLibrary();"></input>
       </p>
     </form>
   </section> 
+  <div id="container">
+
+  </div>
 </body>
 </html>
